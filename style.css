@@ -42,10 +42,10 @@
 .on-off_btn::after {
   margin: 10px;
   position: absolute;
-  top: 0.2em;
-  left: 0.05em;
-  width: 0.95em;
-  height: 0.95em;
+  top: 0.02em;
+  left: 0.1em;
+  width: 1.45em;
+  height: 1.45em;
   background: #F1F1F1;
   border-radius: 100%;
 }
@@ -57,5 +57,5 @@
 }
 
 .on-off-checkbox:checked + .on-off_btn::after {
-  left: 1.025em;
+  left: 1.40em;
 }
