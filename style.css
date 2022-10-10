@@ -1,0 +1,61 @@
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.on-off-checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
+.on-off_btn {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  cursor: pointer;
+}
+
+.on-off_btn::before, 
+.on-off_btn::after {
+  content: "";
+}
+
+.on-off_btn::before {
+  margin: 10px;
+  display: inline-block;
+  width: 3em;
+  height: 1.5em;
+  background: #111;
+  background-image: url(./assets/sun.svg);
+  background-repeat: no-repeat;
+  right: 0;
+  border-radius: 10em;
+}
+
+.on-off_btn::after {
+  margin: 10px;
+  position: absolute;
+  top: 0.2em;
+  left: 0.05em;
+  width: 0.95em;
+  height: 0.95em;
+  background: #F1F1F1;
+  border-radius: 100%;
+}
+
+.on-off-checkbox:checked + .on-off_btn::before {
+  background-image: url(./assets/moon.svg);
+  background-repeat: no-repeat;
+  left: 0;
+}
+
+.on-off-checkbox:checked + .on-off_btn::after {
+  left: 1.025em;
+}
