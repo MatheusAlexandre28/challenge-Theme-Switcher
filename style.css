@@ -10,6 +10,14 @@
   box-sizing: border-box;
 }
 
+.body {
+  background: #F1F1F1;
+}
+
+.body.active {
+  background: #292C35;
+}
+
 .on-off-checkbox {
   position: absolute;
   left: -9999px;
@@ -26,6 +34,8 @@
 .on-off_btn::after {
   content: "";
 }
+
+
 
 .on-off_btn::before {
   margin: 10px;
